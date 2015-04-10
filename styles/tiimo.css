@@ -1,0 +1,61 @@
+.triangle-isosceles {
+    position: relative;
+    padding: 20px;
+    margin: 1em 0 -0.5em;
+    color: #000;
+    background: #ffffff;
+    border-radius: 3px;
+}
+
+.triangle-isosceles-content {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+
+/* creates triangle */
+.triangle-isosceles:after {
+    content: "";
+    display: block; /* reduce the damage in FF3.0 */
+    position: absolute;
+    bottom: -15px;
+    left: 25px;
+    width: 0;
+    border-width: 15px 15px 0;
+    border-style: solid;
+    border-color: #ffffff transparent;
+}
+
+
+.triangle-isosceles-invert {
+    position: relative;
+    padding: 15px;
+    margin: 1em 0 -0.5em;
+    color: #000;
+    background: #ffffff;
+    border-radius: 3px;
+/*    alignment-baseline: after-; */
+}
+
+.triangle-isosceles-invert-content {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+
+/* creates triangle */
+.triangle-isosceles-invert:after {
+    content: "";
+    display: block; /* reduce the damage in FF3.0 */
+    position: absolute;
+    bottom: -15px;
+    right: 25px;
+    width: 0;
+    border-width: 15px 15px 0;
+    border-style: solid;
+    border-color: #ffffff transparent;
+}
+
+.special-text {
+    color: #080808;
+}
